@@ -84,3 +84,14 @@ Compensation from the persistence layer.
 
 ## Delivery
 Please upload your results to a publicly accessible Git repo. Free ones are provided by Github and Bitbucket.
+
+### Somethings to note
+
+My system is configure in Java 17, I didn't change that to java 7, which is supported by gradle 6.3. 
+
+I have changed gradle to version 7.4 which support java 17.
+
+Changing Java Version on the machine is a lot of extra work and disk use.
+
+So if your machine is on Java 7 and this is not working I suggest changing gradle version back to 6.3 and run the application.
+This file can be found at _gradle/wrapper/gradle-wrapper.properties_
