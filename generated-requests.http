@@ -1,0 +1,87 @@
+### Insert an Employee Eduardo Zing
+POST http://localhost:8080/employee
+Content-Type: application/json
+
+{
+
+  "firstName" : "Eduardo",
+  "lastName" : "Zing",
+  "position" : "Development Manager",
+  "department" : "Engineering",
+  "directReports" : [
+    {
+      "employeeId" : "b7839309-3348-463b-a7e3-5de1c168beb3"
+    },
+    {
+      "employeeId": "03aa1462-ffa9-4978-901b-7c001562cf6f"
+    }
+  ]
+
+}
+
+<> 2022-05-23T164443.200.json
+<> 2022-05-23T162848.200.json
+<> 2022-05-23T162435.200.json
+<> 2022-05-23T162102.200.json
+<> 2022-05-23T122450.200.json
+
+
+### Creates a Compensation Object for employeeID 16a596ae-edd3-4847-99fe-c4518e82c86f
+POST http://localhost:8080/compensation
+Content-Type: application/json
+
+{
+"employeeID": "16a596ae-edd3-4847-99fe-c4518e82c86f",
+"salary": 1235.56,
+"edate" :"2022-03-01"
+}
+
+<> 2022-05-23T164443-1.200.json
+<> 2022-05-23T162848-1.200.json
+<> 2022-05-23T162610.200.json
+<> 2022-05-23T162436.200.json
+<> 2022-05-23T162102-1.200.json
+
+
+### Get details of Employee with id 16a596ae-edd3-4847-99fe-c4518e82c86f
+GET http://localhost:8080/employee/16a596ae-edd3-4847-99fe-c4518e82c86f
+
+<> 2022-05-23T164443-2.200.json
+<> 2022-05-23T162848-2.200.json
+<> 2022-05-23T162436-1.200.json
+<> 2022-05-23T162102-2.200.json
+
+
+
+### Get Compensation for emplyee id 16a596ae-edd3-4847-99fe-c4518e82c86f
+GET http://localhost:8080/getcompensation/16a596ae-edd3-4847-99fe-c4518e82c86f
+
+<> 2022-05-23T164443.500.json
+<> 2022-05-23T162848.500.json
+<> 2022-05-23T162436.500.json
+<> 2022-05-23T162102-3.200.json
+
+### Get Reporting structure for 16a596ae-edd3-4847-99fe-c4518e82c86f
+GET http://localhost:8080/reporting/16a596ae-edd3-4847-99fe-c4518e82c86f
+
+<> 2022-05-23T164443-3.200.json
+<> 2022-05-23T162849.200.json
+<> 2022-05-23T162436-2.200.json
+<> 2022-05-23T162253.200.json
+
+### Get Reporting structure for 03aa1462-ffa9-4978-901b-7c001562cf6f
+GET http://localhost:8080/reporting/03aa1462-ffa9-4978-901b-7c001562cf6f
+
+<> 2022-05-23T164443-4.200.json
+<> 2022-05-23T162849-1.200.json
+<> 2022-05-23T162436-3.200.json
+<> 2022-05-23T162309.200.json
+
+### Get Reporting structure for c0c2293d-16bd-4603-8e08-638a9d18b22c
+GET http://localhost:8080/reporting/c0c2293d-16bd-4603-8e08-638a9d18b22c
+
+<> 2022-05-23T164443-5.200.json
+<> 2022-05-23T162849-2.200.json
+<> 2022-05-23T162436-4.200.json
+<> 2022-05-23T162329.200.json
+
